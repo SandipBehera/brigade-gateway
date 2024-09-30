@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.info-box {
+  position: absolute;
+  top: 4%;
+  left: 65%;
+  z-index: 9;
+  margin-top: 4vw;
+  padding-bottom: 0.5vw;
+  display: inline-block;
+  width: 22vw;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-bottom-right-radius: 8px;
+  color: #fff;
+}
+.info-box span.heading {
+  padding: 0.6vw 0;
+  margin-top: 1vw;
+  color: #d7d7d7;
+  font-weight: 600;
+}
+.info-box span.list-icon {
+  color: var(--colorSecondary);
+}
+.info-box .micro-form-btn {
+  margin: 0 0.8vw;
+}
+@media only screen and (max-width: 991px) {
+  .info-box {
+    padding-bottom: 0.5vw;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+  }
+  .info-box span.heading {
+    padding: 3px 0;
+    margin-top: 3px;
+    font-weight: 600;
+  }
+  .info-box span.list-icon {
+    color: #fdbf32;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .info-box {
+    width: 32vw;
+  }
+  .overflow-hidden {
+    overflow: hidden !important;
+  }
+}
+.effetMoveGradient,
+.effetMoveGradient:hover {
+  text-shadow: 0 3px 6px #b11b5c;
+  background-color:#b11b5c;
+  background: linear-gradient(
+    -45deg,
+    #fdbf32,
+    #b11b5c,
+    #29759f,
+    #b11b5c
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite, rocking 3s ease infinite;
+  animation-delay: 2s;
+  -moz-animation: Gradient 3s ease infinite, rocking 3s ease infinite;
+  animation-delay: 2s;
+  animation: Gradient 3s ease infinite, rocking 3s ease infinite;
+  animation-delay: 2s;
+  color: #fff;
+  border: none;
+}
+.effetGradient,
+.effetGradient:hover {
+  text-shadow: 0 3px 6px #b11b5c;
+  background-color: #b11b5c;
+  background: linear-gradient(
+    -45deg,
+    #fdbf32,
+    #b11b5c,
+    #29759f,
+    #b11b5c
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 3s ease infinite;
+  -moz-animation: Gradient 3s ease infinite;
+  animation: Gradient 3s ease infinite;
+  color: #fff;
+  border: none;
+}
+.effectScale {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.effectScale:hover {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -o-transform: scale(1.08);
+  transform: scale(1.08);
+}
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1.5s ease-in;
+}
+
+.fade-in.visible {
+  opacity: 1;
+}
+/* Slide-in from left animation */
+.slide-in-left {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 1.5s ease-in, opacity 1.5s ease-in;
+}
+
+.slide-in-left.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Slide-in from right animation */
+.slide-in-right {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 1.5s ease-in, opacity 1.5s ease-in;
+}
+
+.slide-in-right.visible {
+  transform: translateX(0);
+  opacity: 1;
+}
+.bg-white{
+  background-color: #fff;
+}
+.bg-opacity-75{
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.bg-opacity-50{
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.bg-blue-500{
+  background-color: #3b82f6;
+}
+.text-white{
+  color: #fff;
+}
