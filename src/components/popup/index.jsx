@@ -41,13 +41,76 @@ const Modal = ({ show, onClose }) => {
                 </div>
                 <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
                   <DialogTitle as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                    Deactivate account
+                    Want A Free Consultation?
                   </DialogTitle>
                   <div className="mt-2">
-                    <p className="text-sm text-gray-500">
-                      Are you sure you want to deactivate your account? All of your data will be permanently removed.
-                      This action cannot be undone.
-                    </p>
+                  <form className="texi-left items-start">
+                    <div className="mb-4">
+                      <label
+                        for="name"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                      >
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="John Doe"
+                        style={{
+                          border: "2px solid #d1d5db",
+                          borderRadius: "0.375rem",
+                          width: "100%",
+                        }}
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        for="email"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                      >
+                        Your Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        style={{
+                          border: "2px solid #d1d5db",
+                          borderRadius: "0.375rem",
+                          width: "100%",
+                        }}
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        for="phone"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                      >
+                        Your Phone
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        style={{
+                          border: "2px solid #d1d5db",
+                          borderRadius: "0.375rem",
+                          width: "100%",
+                        }}
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      />
+                    </div>
+                    <div className="items-left">
+                      <button
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        style={{ backgroundColor: "#29759f", color: "#ffffff" }}
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
                   </div>
                 </div>
               </div>
@@ -56,9 +119,9 @@ const Modal = ({ show, onClose }) => {
               <button
                 type="button"
                 onClick={onClose}
-                className="inline-flex w-full justify-center rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
+                className="inline-flex w-full justify-center rounded-md effetMoveGradient px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 sm:ml-3 sm:w-auto"
               >
-                Deactivate
+                Book Now
               </button>
               <button
                 type="button"

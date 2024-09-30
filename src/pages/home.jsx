@@ -6,6 +6,7 @@ import Modal from "../components/popup";
 
 const HomePage = () => {
   const [showModal, setShowModal] = React.useState(false);
+
   return (
     <Layout>
       <div className="relative">
@@ -70,6 +71,7 @@ const HomePage = () => {
           <button
             className="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full"
             style={{ backgroundColor: "#29759f", color: "#ffffff" }}
+            onClick={() => setShowModal(true)}
           >
             Enquire Now
           </button>
@@ -94,14 +96,13 @@ const HomePage = () => {
                     as a testament to luxurious living and contemporary design
                     in the heart of Kokapet, Hyderabad. Developed by a reputeted
                     real estate builder Brigade Group. The project offers a
-                    range of thoughtfully designed configurations, including 2,
-                    3, and 4 BHK residential apartments. Each unit is
-                    meticulously crafted to provide maximum comfort and
-                    functionality, catering to the diverse needs of modern
-                    families. As the project's development progresses and the
-                    RERA registration is obtained, Brigade Neopolis Kokapet is
-                    all set to elevate the standards of urban living in
-                    Hyderabad.
+                    range of thoughtfully designed configurations, including 3
+                    and 4 BHK residential apartments. Each unit is meticulously
+                    crafted to provide maximum comfort and functionality,
+                    catering to the diverse needs of modern families. As the
+                    project's development progresses and the RERA registration
+                    is obtained, Brigade Neopolis Kokapet is all set to elevate
+                    the standards of urban living in Hyderabad.
                   </p>
                   <p className="text-base text-gray-700 mt-4">
                     The spacious interiors are complemented by aesthetic
@@ -268,84 +269,84 @@ const HomePage = () => {
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-4">
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/1.webp"
-                  alt="Swimming Pool"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">Swimming Pool</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/1.webp"
+                    alt="Swimming Pool"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">Swimming Pool</h3>
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/2.webp"
-                  alt="Gym"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">Gym</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/2.webp"
+                    alt="Gym"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">Gym</h3>
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/3.webp"
-                  alt="Jogging Track"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">Jogging Track</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/3.webp"
+                    alt="Jogging Track"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">Jogging Track</h3>
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/4.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">Yoga Pavilion</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/4.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">Yoga Pavilion</h3>
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/5.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">24/7 CCTV</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/5.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">24/7 CCTV</h3>
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/6.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">Club House</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/6.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">Club House</h3>
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/7.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">Mini Theater</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/7.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">Mini Theater</h3>
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/amenities/8.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-                <h3 class="text-center font-bold text-xl">Tennis Court</h3>
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/amenities/8.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <h3 class="text-center font-bold text-xl">Tennis Court</h3>
+                </div>
               </SlideInRightComponent>
             </div>
           </div>
@@ -360,61 +361,158 @@ const HomePage = () => {
             </h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/gallery/g1-sm.webp"
-                  alt="Swimming Pool"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/gallery/g1-sm.webp"
+                    alt="Swimming Pool"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src=".../../img/gallery/g2-sm.webp"
-                  alt="Gym"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src=".../../img/gallery/g2-sm.webp"
+                    alt="Gym"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/gallery/g3-sm.webp"
-                  alt="Jogging Track"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/gallery/g3-sm.webp"
+                    alt="Jogging Track"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/gallery/g4-sm.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/gallery/g4-sm.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/gallery/g5-sm.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/gallery/g5-sm.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-              <div class="bg-white rounded-lg shadow-lg p-4">
-                <img
-                  src="../../img/gallery/g6-sm.webp"
-                  alt="Yoga Pavilion"
-                  class="w-full h-48 object-cover rounded-lg mb-4"
-                />
-              </div>
+                <div class="bg-white rounded-lg shadow-lg p-4">
+                  <img
+                    src="../../img/gallery/g6-sm.webp"
+                    alt="Yoga Pavilion"
+                    class="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                </div>
               </SlideInRightComponent>
             </div>
           </div>
+        </section>
+        <section className="my-20">
+          <FaderComponent>
+            <div className="container mx-auto px-6 py-2">
+              <h2
+                className="text-3xl font-extrabold mb-4"
+                style={{ color: "#29759f" }}
+              >
+                Brigade Neopolis Location
+              </h2>
+              <div className="md:grid md:grid-cols-2 gap-4 items-start md:ml-40">
+                <div className="mt-6 md:mt-0">
+                  
+                  <form className="texi-left items-start">
+                    <div className="mb-4">
+                      <label
+                        for="name"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                      >
+                        Your Name
+                      </label>
+                      <input
+                        type="text"
+                        id="name"
+                        placeholder="John Doe"
+                        style={{
+                          border: "2px solid #d1d5db",
+                          borderRadius: "0.375rem",
+                          width: "100%",
+                        }}
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        for="email"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                      >
+                        Your Email
+                      </label>
+                      <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        style={{
+                          border: "2px solid #d1d5db",
+                          borderRadius: "0.375rem",
+                          width: "100%",
+                        }}
+                        className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                      />
+                    </div>
+                    <div className="mb-4">
+                      <label
+                        for="phone"
+                        className="block text-gray-700 text-sm font-bold mb-2 text-left"
+                      >
+                        Your Phone
+                      </label>
+                      <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        style={{
+                          border: "2px solid #d1d5db",
+                          borderRadius: "0.375rem",
+                          width: "100%",
+                        }}
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                      />
+                    </div>
+                    <div className="items-left">
+                      <button
+                        className="effetMoveGradient hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full"
+                        
+                      >
+                        Enquire Now
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div className="mt-0 md:mt-0">
+                <div className="flex flex-row items-center md:mt-0">
+                  <i className="fas fa-map-marker-alt text-green-500 mr-2"></i>
+                  <h3 className="text-base font-semibold text-gray-800">
+                    Brigade Neopolis, Kokapet, Hyderabad
+                  </h3>
+                  </div>
+                  <img
+                    src="../../img/location-map-bridge.webp"
+                    alt="Brigade Neopolis"
+                    className="object-cover w-full h-64 rounded-lg mt-0"
+                  />
+              </div>
+              </div>
+            </div>
+          </FaderComponent>
         </section>
         <Modal show={showModal} onClose={() => setShowModal(false)} />
       </main>

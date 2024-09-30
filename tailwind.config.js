@@ -107,9 +107,9 @@ module.exports = {
       hover: ['group-hover'],
     },
   },
-  // plugins: [
-  //   require('taos/plugin')
-  // ],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
   // safelist: [
   //   '!duration-[0ms]',
   //   '!delay-[0ms]',
