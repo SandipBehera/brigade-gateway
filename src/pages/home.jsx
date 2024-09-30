@@ -6,7 +6,50 @@ import Modal from "../components/popup";
 
 const HomePage = () => {
   const [showModal, setShowModal] = React.useState(false);
+  const [formaData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    phone: "",
+  });
+  const handleChange = (e) => {
+    setFormData({
+      ...formaData,
+      [e.target.name]: e.target.value,
+    });
+  }
+  const handleSubmit = async(e) => {
+    e.preventDefault();
 
+    const { name, email, phone} = formaData;
+    const projectName="brigade The Gateway";
+    const data = {
+      name,
+      email,
+      phone,
+      projectName
+    }
+    if (!name || !email || !phone) {
+      alert("Please fill all the fields");
+      return;
+    }
+    const response = await fetch("https://ycb1sb6t8e.execute-api.us-west-2.amazonaws.com/default/LeadStorw", {
+      method: "POST",
+      body: JSON.stringify(data),
+    });
+    if (response.status === 200) {
+      alert("Your data has been submitted successfully");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+      });
+      setShowModal(false);
+    }
+    else {
+      alert("Something went wrong. Please try again later");
+    }
+    
+  }
   return (
     <Layout>
       <div className="relative">
@@ -441,12 +484,14 @@ const HomePage = () => {
                         type="text"
                         id="name"
                         placeholder="John Doe"
+                        name="name"
                         style={{
                           border: "2px solid #d1d5db",
                           borderRadius: "0.375rem",
                           width: "100%",
                         }}
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="mb-4">
@@ -459,6 +504,7 @@ const HomePage = () => {
                       <input
                         type="email"
                         id="email"
+                        name="email"
                         placeholder="Enter your email"
                         style={{
                           border: "2px solid #d1d5db",
@@ -466,6 +512,7 @@ const HomePage = () => {
                           width: "100%",
                         }}
                         className="block flex-1 border-0 bg-transparent py-1.5 pl-1 text-gray-900 placeholder:text-gray-400 focus:ring-0 sm:text-sm sm:leading-6"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="mb-4">
@@ -484,13 +531,15 @@ const HomePage = () => {
                           borderRadius: "0.375rem",
                           width: "100%",
                         }}
+                        name="phone"
                         className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        onChange={handleChange}
                       />
                     </div>
                     <div className="items-left">
                       <button
                         className="effetMoveGradient hover:bg-blue-500 text-white font-bold py-2 px-4 rounded-full"
-                        
+                        onClick={handleSubmit}
                       >
                         Enquire Now
                       </button>
@@ -514,7 +563,7 @@ const HomePage = () => {
             </div>
           </FaderComponent>
         </section>
-        <Modal show={showModal} onClose={() => setShowModal(false)} />
+        <Modal show={showModal} onClose={() => setShowModal(false)} handleChange={handleChange} handleClick={handleSubmit}/>
       </main>
     </Layout>
   );

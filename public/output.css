@@ -1666,6 +1666,14 @@ code {
     width: 20rem;
   }
 
+  .md\:w-60 {
+    width: 15rem;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
   }
