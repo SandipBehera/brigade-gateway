@@ -67,14 +67,12 @@ code {
 }
 .effetMoveGradient,
 .effetMoveGradient:hover {
-  text-shadow: 0 3px 6px #b11b5c;
-  background-color:#b11b5c;
+  text-shadow: 0 3px 6px #0c0c0c;
+  background-color:#fdbf32;
   background: linear-gradient(
-    -45deg,
+    4deg,
     #fdbf32,
-    #b11b5c,
-    #29759f,
-    #b11b5c
+    #29759f
   );
   background-size: 400% 400%;
   -webkit-animation: Gradient 3s ease infinite, rocking 3s ease infinite;
@@ -88,14 +86,12 @@ code {
 }
 .effetGradient,
 .effetGradient:hover {
-  text-shadow: 0 3px 6px #b11b5c;
-  background-color: #b11b5c;
+  text-shadow: 0 3px 6px #edcb66;
+  background-color: #edcb66;
   background: linear-gradient(
-    -45deg,
+    45deg,
     #fdbf32,
-    #b11b5c,
-    #29759f,
-    #b11b5c
+    #29759f
   );
   background-size: 400% 400%;
   -webkit-animation: Gradient 3s ease infinite;
@@ -141,7 +137,7 @@ code {
 .slide-in-left {
   transform: translateX(-100%);
   opacity: 0;
-  transition: transform 1.5s ease-in, opacity 1.5s ease-in;
+  transition: transform 0.5s ease-in, opacity 1.5s ease-in;
 }
 
 .slide-in-left.visible {
@@ -153,7 +149,7 @@ code {
 .slide-in-right {
   transform: translateX(100%);
   opacity: 0;
-  transition: transform 1.5s ease-in, opacity 1.5s ease-in;
+  transition: transform 0.5s ease-in, opacity 1.5s ease-in;
 }
 
 .slide-in-right.visible {

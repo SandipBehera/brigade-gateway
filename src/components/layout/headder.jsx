@@ -52,22 +52,18 @@ useEffect(() => {
             <div className="flex items-center">
               <div className="flex-shrink-0">
                 <a href="/">
-                  {/* <img
+                  <img
                     className={`h-8 w-100`}
-                    src="../../img/Logo_White.png"
+                    src="../../img/logo_dark.png"
                     alt="Trescorp"
                     style={{
                       display: `${isMobileMenuOpen ? "none" : "block"}`,
                     }}
-                  /> */}
-                  <p className="text-white" style={{
-                      display: `${isMobileMenuOpen ? "none" : "block"}`,
-                      color: `${isScrolled ? "#000000" : "#ffffff"}`,
-                    }}>The GateWay</p>
+                  />
                 </a>
               </div>
             </div>
-            <div className="-mr-2 nav_button_custom flex md:visible">
+            {/* <div className="-mr-2 nav_button_custom flex md:visible">
               <button
                 type="button"
                 className={`relative inline-flex items-center justify-center rounded-full p-2 text-gray-400 hover:bg-gray-700 hover:nav-text  ${
@@ -111,7 +107,7 @@ useEffect(() => {
                   />
                 </svg>
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
@@ -159,12 +155,12 @@ useEffect(() => {
           <div className="flex items-center justify-end">
             <div className="flex-shrink-0">
               <a href="/">
-                {/* <img
+                <img
                   className="h-8 w-100"
-                  src="../../img/Trescorp-logo.png"
-                  alt="Trescorp"
-                /> */}
-                <p className="">The GateWay</p>
+                  src="../../img/logo_dark.png"
+                  alt="Brigade"
+                />
+               
               </a>
             </div>
           </div>

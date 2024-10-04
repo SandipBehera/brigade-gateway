@@ -54,7 +54,7 @@ const HomePage = () => {
     <Layout>
       <div className="relative">
         <img
-          src="../../img/Banner1.webp"
+          src="../../img/back.webp"
           alt="Slide 1"
           className="w-full h-screen object-cover"
         />
@@ -73,18 +73,8 @@ const HomePage = () => {
           <div className="bg-blue-100 text-blue-800 text-xs font-semibold px-2 py-1 rounded mb-2 inline-block">
             Coming Soon
           </div>
-          <h1
-            className="text-sm lg:text-2xl mb-2 font-bold"
-            style={{
-              color: "#FF6347",
-              letterSpacing: "2px",
-              textTransform: "uppercase",
-            }}
-          >
-            InterContinental Branded Residences
-          </h1>
           <p className="font-medium mb-4">
-            <strong>At</strong> BRIGADE NEOPOLIS
+            BRIGADE NEOPOLIS
             <br />
             At Kokapet, Hyderabad
           </p>
@@ -122,7 +112,7 @@ const HomePage = () => {
       </div>
 
       <main>
-        <section className="" style={{ backgroundColor: "#232d30" }}>
+        <section className="" style={{ backgroundColor: "rgb(228 185 8)" }}>
           <FaderComponent>
             <div className="container mx-auto px-6 py-2">
               <div className="grid grid-cols-1 md:grid-cols-12 gap-4 my-1">
@@ -175,7 +165,7 @@ const HomePage = () => {
                     <img
                       src="../../img/Budigere.jpg" // Replace with the actual image URL
                       alt="Brigade Neopolis"
-                      className="object-cover w-full h-64 "
+                      className="object-cover w-full h-64 rounded-lg "
                     />
                   </div>
                 </div>
@@ -310,7 +300,7 @@ const HomePage = () => {
             >
               Brigade Neopolis Amenities
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 p-4">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 p-4">
               <SlideInRightComponent>
                 <div class="bg-white rounded-lg shadow-lg p-4">
                   <img
@@ -402,58 +392,58 @@ const HomePage = () => {
             >
               Brigade Neopolis Gallery
             </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g1-sm.webp"
                     alt="Swimming Pool"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    class="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src=".../../img/gallery/g2-sm.webp"
                     alt="Gym"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    class="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g3-sm.webp"
                     alt="Jogging Track"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    class="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g4-sm.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    class="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g5-sm.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    class="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div class="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g6-sm.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    class="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
