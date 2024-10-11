@@ -53,9 +53,9 @@ useEffect(() => {
               <div className="flex-shrink-0">
                 <a href="/">
                   <img
-                    className={`h-8 w-100`}
-                    src="../../img/logo_dark.png"
-                    alt="Trescorp"
+                    className={`h-16 w-100`}
+                    src="../../img/brigade_logo.png"
+                    alt="neo polis"
                     style={{
                       display: `${isMobileMenuOpen ? "none" : "block"}`,
                     }}
