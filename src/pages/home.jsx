@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import FaderComponent from "../components/fader";
 import SlideInRightComponent from "../components/slideInright";
 import Modal from "../components/popup";
+import "./floating.css"
 
 const HomePage = () => {
   const [showModal, setShowModal] = React.useState(false);
@@ -54,7 +55,7 @@ const HomePage = () => {
     <Layout>
       <div className="relative">
         <img
-          src="../../img/back.webp"
+          src="../../img/banner.jpg"
           alt="Slide 1"
           className="w-full h-screen object-cover"
         />
@@ -112,6 +113,37 @@ const HomePage = () => {
       </div>
 
       <main>
+      <div className="float-bottom forall desk-none noth">
+    <div className="one-box">
+      <a href="tel:+919550917866">
+        <div className="img-icon">
+          <i className="fas fa-phone"></i>
+        </div>
+        <div className="txt-icon">
+          Call
+        </div>
+      </a>
+    </div>
+    <div className="one-box">
+      <a href="https://api.whatsapp.com/send?phone=+919550917866&text=Hi!%20I\'m%20Interested%20In%20Brigade%20Neopolis%20At,%20Hyderabad.%20Please%20Share%20Details."
+      target="_blank">
+        <div className="img-icon">
+          <i className="fab fa-whatsapp"></i>
+        </div>
+        <div className="txt-icon">
+          Chat
+        </div>
+      </a>
+    </div>
+    <div className="one-box" onClick={() => setShowModal(true)}>
+        <div className="img-icon">
+          <i className="far fa-edit"></i>
+        </div>
+        <div className="txt-icon">
+          Enquire Now
+        </div>
+    </div>
+  </div>
         <section className="" style={{ backgroundColor: "rgb(228 185 8)" }}>
           <FaderComponent>
             <div className="container mx-auto px-6 py-2">
@@ -300,85 +332,85 @@ const HomePage = () => {
             >
               Brigade Neopolis Amenities
             </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 p-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-6 p-4">
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/1.webp"
                     alt="Swimming Pool"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">Swimming Pool</h3>
+                  <h3 className="text-center font-bold text-xl">Swimming Pool</h3>
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/2.webp"
                     alt="Gym"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">Gym</h3>
+                  <h3 className="text-center font-bold text-xl">Gym</h3>
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/3.webp"
                     alt="Jogging Track"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">Jogging Track</h3>
+                  <h3 className="text-center font-bold text-xl">Jogging Track</h3>
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/4.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">Yoga Pavilion</h3>
+                  <h3 className="text-center font-bold text-xl">Yoga Pavilion</h3>
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/5.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">24/7 CCTV</h3>
+                  <h3 className="text-center font-bold text-xl">24/7 CCTV</h3>
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/6.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">Club House</h3>
+                  <h3 className="text-center font-bold text-xl">Club House</h3>
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/7.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">Mini Theater</h3>
+                  <h3 className="text-center font-bold text-xl">Mini Theater</h3>
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-4">
+                <div className="bg-white rounded-lg shadow-lg p-4">
                   <img
                     src="../../img/amenities/8.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-4"
+                    className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <h3 class="text-center font-bold text-xl">Tennis Court</h3>
+                  <h3 className="text-center font-bold text-xl">Tennis Court</h3>
                 </div>
               </SlideInRightComponent>
             </div>
@@ -392,58 +424,58 @@ const HomePage = () => {
             >
               Brigade Neopolis Gallery
             </h2>
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-1">
+                <div className="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g1-sm.webp"
                     alt="Swimming Pool"
-                    class="w-full h-48 object-cover rounded-lg mb-1"
+                    className="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-1">
+                <div className="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src=".../../img/gallery/g2-sm.webp"
                     alt="Gym"
-                    class="w-full h-48 object-cover rounded-lg mb-1"
+                    className="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-1">
+                <div className="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g3-sm.webp"
                     alt="Jogging Track"
-                    class="w-full h-48 object-cover rounded-lg mb-1"
+                    className="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-1">
+                <div className="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g4-sm.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-1"
+                    className="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-1">
+                <div className="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g5-sm.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-1"
+                    className="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>
               <SlideInRightComponent>
-                <div class="bg-white rounded-lg shadow-lg p-1">
+                <div className="bg-white rounded-lg shadow-lg p-1">
                   <img
                     src="../../img/gallery/g6-sm.webp"
                     alt="Yoga Pavilion"
-                    class="w-full h-48 object-cover rounded-lg mb-1"
+                    className="w-full h-48 object-cover rounded-lg mb-1"
                   />
                 </div>
               </SlideInRightComponent>

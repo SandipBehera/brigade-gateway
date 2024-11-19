@@ -1,0 +1,44 @@
+.float-bottom {
+    position: fixed;
+    bottom: 0px;
+    z-index: 99;
+    width: 100%;
+    padding: 5px 0px;
+    background: #fdbf32;
+  }
+  .one-box {
+    text-align: center;
+    float: left;
+    width: 30%;
+  }
+  .float-bottom.forall .txt-icon {
+    font-size: 12px;
+  }
+  .float-bottom.forall {
+    bottom: 0px;
+  }
+  .desk-none {
+    display: block;
+  }
+  .img-icon i {
+    background: transparent;
+    padding: 2px 5px;
+    color: #f75b60;
+  }
+  .txt-icon {
+    color: #fff;
+    font-size: 13px;
+  }
+  @media (min-width: 100px) and (max-width: 768px) {
+    .float-bottom {
+      position: fixed;
+      bottom: 0px;
+      z-index: 99;
+      width: 100%;
+      padding: 5px 0px;
+      background: #fdbf32;
+    }
+    .desk-none {
+        display: block;
+      }
+}
